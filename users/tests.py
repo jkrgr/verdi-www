@@ -5,10 +5,10 @@ when you run "manage.py test".
 """
 
 from django.test import TestCase
-from persons.models import User
+from users.models import User
 
 
-class PersonTest(TestCase):
+class UserTest(TestCase):
     def setUp(self):
         """ Create some data to test against
         """
