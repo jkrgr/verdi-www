@@ -120,7 +120,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'verdi',
     'posts',
-    'persons',
+    'users',
     'market',
 )
 
