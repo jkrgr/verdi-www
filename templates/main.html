@@ -2,7 +2,56 @@
 
 {% block body %}
 
-    <h1> {{ post.heading }} </h1>
-    <p>  {{ post.body    }} </p>
+
+    <div class="slider-block">
+
+        <div id="myCarousel" class="carousel slide">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item">
+                    <img src="{{ STATIC }}img/slide_bg1.jpg" alt="Someimage">
+                    <div class="caption top-left container">
+                        <p class="small text-dark">Velkommen til finansgruppen </p>
+                        <p class="large text-orange ">Verdi</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ STATIC }}img/slide_bg2.jpg" alt="Slide2">
+                    <div class="caption top-right container">
+                        <p class="large white orange">11 %</p>
+                        <p class="small white">er avkastningen på vår portefølje hittil i år.</p>
+                        <p class="small white">Overskuddet går til et veldedig formål.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ STATIC }}img/slide_bg3.jpg" alt="Slide2">
+                    <div class="caption top-right container">
+                        <p class="small white">Vi arrangerer kurs og foredrag med kjente</p>
+                        <p class="medium white orange">finanspersonligheter</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="{{ STATIC }}img/slide_bg4.jpg" alt="Slide2">
+                    <div class="caption top-right container">
+                        <p class="medium white">Vår visjon er å skape et levende</p>
+                        <p class="large white orange"> finansmiljø</p>
+                        <p class="medium white text-dark"> på NTNU</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="pull-left">Verdi NTNU 2012</p>
+            <p class="pull-right">NTNU Gløshaugen, 7491 Trondheim</p>
+        </div>
+    </footer>
 
 {% endblock %}

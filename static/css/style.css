@@ -1,0 +1,251 @@
+footer {
+    margin-top: 25px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(27, 25, 26, 0.30);
+}
+footer p {
+    padding-bottom: 0;
+}
+footer a {
+    color: #BBB;
+}
+footer a:hover {
+    color: #BBB;
+    text-decoration: underline;
+}
+
+
+/* ########### */
+/* $NAVIGATION */
+/* ########### */
+.navbar .brand {
+    margin-top: 20px;
+    padding-bottom: 8px;
+    max-height: 40px;
+    width: auto;
+}
+.navbar .navbar-inner {
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0.95;
+    filter: none;
+    height: 60px;
+}
+.navbar .nav {
+    margin-top: 20px;
+}
+.navbar .nav > li > a {
+    color: #333;
+    padding: 10px 10px 11px;
+    text-shadow: none;
+}
+.navbar .nav > li > a:hover {
+    color: #111;
+}
+.navbar .nav > li.active > a {
+    background: none;
+    color: #111;
+}
+.navbar .nav > li.active > a:hover {
+    background: none;
+    color: #111;
+}
+
+/* Carousel  */
+.carousel {
+    margin-bottom: 0;
+}
+.carousel .item {
+    width: 100%;
+    /* max-height: 600px; */
+    height: 100%;
+}
+.carousel .item img {
+    width: 100%;
+}
+.carousel .carousel-control {
+    background: none;
+    border: none;
+    top: 30%;
+}
+
+.caption {
+    position: absolute;
+}
+.caption.top-left, .caption.top-right {
+    top: 25px;
+}
+.caption.top-right{
+    top: 15%;
+    right:10%;
+}
+.caption.top-left{
+    top: 15%;
+    left:-10%;
+}
+
+.caption.bottom-left, .caption.bottom-right {
+    bottom: 25px;
+}
+.caption.top-right p, .caption.middle-right p, .caption.bottom-right p {
+    padding-bottom: 10px;
+    text-align: right;
+    float: right;
+    line-height: 100%;
+}
+.caption p {
+    padding: 5px 10px;
+    margin: 0;
+    float: right;
+    display: block;
+    clear: both;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 1;
+}
+.caption .add-space {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.caption .large {
+    font-size: 73px;
+}
+.caption .medium {
+    font-size: 40px;
+}
+.caption .small {
+    font-size: 22px;
+}
+.caption .white {
+    background: rgba(255, 255, 255, 0.4);
+}
+.caption .orange {
+    color: rgba(231, 129, 0, 0.80);
+    width: auto;
+}
+.caption .text-orange {
+    color: #e78100;
+}
+
+
+body {
+    font-family: 'Caudex', serif;
+    background: url("../img/bg.png") repeat #F3F1F8;
+    color: rgba(29, 29, 32, 1);
+}
+/* navigation */
+.navbar {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* ######## */
+/* $QUERIES */
+/* ######## */
+/* Large desktop */
+@media (min-width: 1200px) {
+    .caption.top-left, .caption.middle-left, .caption.bottom-left {
+        margin-left: -585px;
+    }
+    .caption.top-right, .caption.middle-right, .caption.bottom-right {
+        margin-left: -625px;
+    }
+
+    .portfolio-thumbnails .portfolio-item {
+        height: 190px;
+    }
+    .portfolio-thumbnails .portfolio-item .image-wrapper img {
+        max-width: 300px;
+    }
+}
+/* Portrait tablet*/
+@media (max-width: 980px) {
+    .caption.top-right, .caption.middle-right, .caption.bottom-right {
+        left: 0;
+        margin-left: 0;
+        margin-right: 25px;
+        width: 100%;
+    }
+
+
+    /* ################### */
+    /*  $PORTRAIT-CAROUSEL */
+    /* ################### */
+    .caption.top-left, .caption.middle-left, .caption.bottom-left {
+        margin-left: -320px;
+    }
+    .caption.top-left p, .caption.middle-left p, .caption.bottom-left p {
+        margin-left: 0;
+    }
+    .caption.top-right p, .caption.middle-right p, .caption.bottom-right p {
+        margin-right: 40px;
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .hero-unit .thumbnail {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* make this items full-width (remove body padding) */
+    .slider-block, .hero-unit, footer {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    /* ##################### */
+    /* $SMARTHPHONE-CAROUSEL */
+    /* ##################### */
+    .caption {
+        /* text sizes */
+    }
+    .caption.top-left, .caption.middle-left, .caption.bottom-left {
+        margin-left: -250px;
+    }
+    .caption .large {
+        font-size: 27px;
+    }
+    .caption .medium {
+        font-size: 24px;
+    }
+    .caption .small {
+        font-size: 18px;
+    }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .hero-unit h1 {
+        font-size: 40px;
+    }
+
+    /* ##################### */
+    /* $SMARTHPHONE-CAROUSEL */
+    /* ##################### */
+    .caption {
+        /* text sizes */
+    }
+    .caption.top-left, .caption.middle-left, .caption.bottom-left {
+        top: 20%;
+        margin-left: -125px;
+    }
+    .caption .large {
+        font-size: 22px;
+    }
+    .caption .medium {
+        font-size: 20px;
+    }
+    .caption .small {
+        font-size: 12px;
+    }
+
+    /* ################### */
+    /* $SMARTHPHONE-FOOTER */
+    /* ################### */
+    footer p.pull-left, footer p.pull-right {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+}
