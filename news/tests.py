@@ -4,7 +4,7 @@ when you run "manage.py test".
 """
 
 from django.test import TestCase
-from posts.models import Post
+from news.models import Post
 
 def set_up():
     post = Post(heading='Apply for membership',

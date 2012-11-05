@@ -1,3 +1,22 @@
+
+body {
+    font-family: 'Caudex', serif;
+    background: url("../img/bg.png") repeat #F3F1F8;
+    color: rgba(29, 29, 32, 1);
+    background: url("http://solmagazine.files.wordpress.com/2012/07/ecobiz-mu-nyse-in-1921-wallpaper-base-blogspot-com-pic.jpg");
+}
+
+.container-narrow {
+    margin: 90px auto;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.5);
+    text-justify: auto;
+    border-radius: 10px;
+}
+
+
 footer {
     margin-top: 25px;
     padding-top: 10px;
@@ -126,11 +145,6 @@ footer a:hover {
 }
 
 
-body {
-    font-family: 'Caudex', serif;
-    background: url("../img/bg.png") repeat #F3F1F8;
-    color: rgba(29, 29, 32, 1);
-}
 /* navigation */
 .navbar {
     font-size: 13px;

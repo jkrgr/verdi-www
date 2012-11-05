@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div class="container-narrow">
+        <div class="row-fluid">
+            <div class="span8">
+            {% for post in posts %}
+                <h1>{{ post.heading }}</h1>
+                <p>
+                    {{ post.body }}
+                </p>
+            {% endfor %}
+            </div>
+
+            <div class="span4">
+            <h4> Arrangement </h4>
+            <table class="table">
+                <tr><td><b>13.12.12: </b> Timothy Geithner om finanskrisen</td></tr>
+                <tr><td><b>11.01.13: </b> Geore Soros om investeringer i nedgangstid</td></tr>
+                <tr><td><b>14.02.13: </b> Johan H. Andresen om sosialt entreprenørskap</td></tr>
+            </table>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

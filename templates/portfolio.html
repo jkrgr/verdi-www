@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div class="container-narrow">
+        <div class="row-fluid">
+            <div class="span12">
+            {% for stock in stocks %}
+                <h1>{{ stock }}</h1>
+            {% endfor %}
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
