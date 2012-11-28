@@ -2,4 +2,4 @@
 from django.shortcuts import render
 
 def portfolio_view(request):
-    return render(request, 'portfnolio.html', {'stocks':['STL','HLNG','BAKKA']})
+    return render(request, 'portfolio.html', {'stocks':['STL','HLNG','BAKKA']})
